@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "@/components/arrow-up-right";
 import Link from "next/link";
 import { BrandLogo } from "@/components/brand-logo";
 import { Reveal } from "@/components/reveal";
@@ -32,14 +33,20 @@ export default function CountryEntry() {
             <Link href="/pe">
               <span>01 / PERÚ</span>
               <strong>
-                Perú <b>↗</b>
+                Perú{" "}
+                <b>
+                  <ArrowUpRight />
+                </b>
               </strong>
               <small>Caviar · Trufas</small>
             </Link>
             <Link href="/cl">
               <span>02 / CHILE</span>
               <strong>
-                Chile <b>↗</b>
+                Chile{" "}
+                <b>
+                  <ArrowUpRight />
+                </b>
               </strong>
               <small>Caviar · Trufas · Wagyu · Foie gras</small>
             </Link>
@@ -48,7 +55,9 @@ export default function CountryEntry() {
       </div>
       <div className="entry-bottom">
         <span>PILOTO VISUAL · IMÁGENES Y PRECIOS PROVISIONALES</span>
-        <Link href="/admin-demo">Explorar vista administrativa ↗</Link>
+        <Link href="/admin-demo">
+          Explorar vista administrativa <ArrowUpRight />
+        </Link>
       </div>
     </main>
   );

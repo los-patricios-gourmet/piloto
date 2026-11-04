@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "@/components/arrow-up-right";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ProductCard } from "@/components/product-card";
@@ -45,7 +46,10 @@ export default async function MarketHome({
               con tiempo y atención al detalle.
             </p>
             <Link className="outline-action" href={`/${country}/catalogo`}>
-              DESCUBRIR LA COLECCIÓN <span>↗</span>
+              DESCUBRIR LA COLECCIÓN{" "}
+              <span>
+                <ArrowUpRight />
+              </span>
             </Link>
           </Reveal>
         </div>
@@ -96,7 +100,7 @@ export default async function MarketHome({
             </h2>
           </div>
           <Link className="text-arrow" href={`/${country}/catalogo`}>
-            VER TODA LA COLECCIÓN ↗
+            VER TODA LA COLECCIÓN <ArrowUpRight />
           </Link>
         </div>
         <div
@@ -118,7 +122,10 @@ export default async function MarketHome({
                   <span>0{i + 1} / COLECCIÓN</span>
                   <h3>{categoryNames[item.category]}</h3>
                   <span>
-                    EXPLORAR <b>↗</b>
+                    EXPLORAR{" "}
+                    <b>
+                      <ArrowUpRight />
+                    </b>
                   </span>
                 </div>
               </Link>
@@ -147,7 +154,9 @@ export default async function MarketHome({
               href={`/${country}/producto/${lead.slug}`}
             >
               EXPLORAR {categoryNames[lead.category].toUpperCase()}{" "}
-              <span>↗</span>
+              <span>
+                <ArrowUpRight />
+              </span>
             </Link>
           </Reveal>
         </div>
@@ -182,7 +191,10 @@ export default async function MarketHome({
             <em>EMPIEZA AQUÍ.</em>
           </h2>
           <Link className="outline-action" href={`/${country}/catalogo`}>
-            EXPLORAR PRODUCTOS <span>↗</span>
+            EXPLORAR PRODUCTOS{" "}
+            <span>
+              <ArrowUpRight />
+            </span>
           </Link>
         </Reveal>
       </section>
