@@ -35,7 +35,7 @@ Para generar el sitio estático: `npm run build`. El resultado queda en `out/`.
 
 ## Recursos visuales
 
-El logotipo se muestra mediante una porción sin redibujar de una página del manual de marca entregado por la clienta. Cuando estén disponibles los archivos originales del logo, conviene sustituir este recurso por el SVG autorizado. Las cuatro fotografías son imágenes provisionales generadas para el piloto con la herramienta integrada de generación de imágenes. Los prompts y el uso previsto constan en [ASSETS.md](ASSETS.md).
+El logotipo se recortó de una página del manual de marca entregado por la clienta y se eliminó su fondo blanco. Se usa una versión de tinta oscura en superficies claras y otra de tinta clara en superficies oscuras. Cuando estén disponibles los archivos originales del logo, conviene sustituir estos PNG por el SVG autorizado. Las cuatro fotografías son imágenes provisionales generadas para el piloto con la herramienta integrada de generación de imágenes. Los prompts y el uso previsto constan en [ASSETS.md](ASSETS.md).
 
 ## Pendiente antes de producción
 
